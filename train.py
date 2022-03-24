@@ -81,5 +81,5 @@ if __name__ == '__main__':
     train_dataloader = DataLoader(traindataset, batch_size=32, shuffle=True, drop_last=True)
     testdataset = Surgery_1(train=False, transform=train_transform)
     test_dataloader = DataLoader(testdataset, batch_size=32, shuffle=False, drop_last=False)
-    # train(model, train_dataloader,test_dataloader,learning_rate)
+    train(model, train_dataloader,test_dataloader,learning_rate)
    
