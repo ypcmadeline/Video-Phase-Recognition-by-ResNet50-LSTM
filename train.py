@@ -175,14 +175,14 @@ def test(model,test_loader):
 
 if __name__ == '__main__':
 
-    part = 2
+    part = 1
 
     if part == 2:
         print("Running ResNet+LSTM")
         model = ResNetLSTM()
     else:
         print("Running ResNet50")
-        model = torchvision.models.resnet50(pretrained=True)
+        model = torchvision.models.resnet50(pretrained=False)
         model.fc = nn.Sequential(nn.Linear(2048, 7))   
         ct = 0
         for child in model.children():

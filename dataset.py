@@ -15,7 +15,7 @@ import glob
 import re
 import torch
 
-part =  2
+part =  1
 sequence_length = 3
 
 
